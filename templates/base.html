@@ -30,9 +30,10 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
         <a class="navbar-brand" href="{% url 'home' %}">
-            <img src="https://res.cloudinary.com/die65ihvc/image/upload/v1668515830/PROJECT-4/WORKOUT_LOGO_fppmvj.png" width="30" height="30"
-                class="d-inline-block align-top mr-3" alt="">
-            <img src="https://res.cloudinary.com/die65ihvc/image/upload/v1668515853/PROJECT-4/WORKOUT_BRAND_eow3du.png" width="200" height="30"  class="d-inline-block align-top mr-4" alt="" alt="">
+            <img src="https://res.cloudinary.com/die65ihvc/image/upload/v1668515830/PROJECT-4/WORKOUT_LOGO_fppmvj.png"
+                width="30" height="30" class="d-inline-block align-top mr-3" alt="">
+            <img src="https://res.cloudinary.com/die65ihvc/image/upload/v1668515853/PROJECT-4/WORKOUT_BRAND_eow3du.png"
+                width="200" height="30" class="d-inline-block align-top mr-4" alt="" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,7 +56,8 @@
                         <i class="fa fa-plus" aria-hidden="true"></i> Create
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="{% url 'create_workout' %}"><i class="fa fa-bars" aria-hidden="true"></i> Workout
+                        <a class="dropdown-item" href="{% url 'create_workout' %}"><i class="fa fa-bars"
+                                aria-hidden="true"></i> Workout
                             Category</a>
                         <a class="dropdown-item" href="{% url 'create_exercise' %}"><i class="fa-solid fa-dumbbell"></i>
                             Exercise</a>
@@ -84,7 +86,8 @@
                 {% for message in messages %}
                 <div class="alert {{ message.tags }} alert-dismissable fade show" id="msg" role="alert">
                     {{ message | safe }}
-                    <button type="button" class="btn close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span>
+                    <button type="button" class="btn close" data-dismiss="alert" aria-label="Close"><span
+                            aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 {% endfor %}
@@ -97,10 +100,10 @@
 </body>
 
 <script>
-    setTimeout(function() {
+    setTimeout(function () {
         let messages = document.getElementById("msg");
         let alert = new bootstrap.Alert(messages);
-        alert.close();  
+        alert.close();
     }, 3000);
 </script>
 
