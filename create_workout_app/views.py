@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views import generic
+from django.contrib import messages
 from .models import WorkoutCategory, Exercise
 from .forms import CreateExerciseForm, CreateWorkoutCategoryForm, EditExerciseForm, EditWorkoutCategoryForm
 
