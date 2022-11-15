@@ -55,3 +55,38 @@
 </ul>
 <br>
 <img src="media/images/DELETE_EXERCISE.png">
+<br>
+
+### Creating Account / Signing In:
+<ul>
+  <li>To access the site, the user must sign up, create an account. Once signed up the user has permission to begin creating exercises.</li>
+  <li>If the user has already registered, they must sign in to gain access to these features.</li>
+</ul>
+<br>
+<p>Sign Up page:</p>
+<img src="media/images/SIGN_UP.png">
+<br>
+<p>Login page, This welcomes all users who visit the app:</p>
+<img src="media/images/SIGN_IN.png">
+<br>
+
+## Testing
+
+### Device Testing:
+<ul>
+  <li>Tested the application on several different devices, such as iPhone (11, SE), iPad air and Google nest hub (2nd gen).</li>
+  <li>No bugs or errors returned when testing on these devices.</li>
+</ul>
+
+### Browser Testing:
+<ul>
+  <li>No bugs or errors occurred when testing on the following browsers:</li>
+  <ul>
+    <li>Google Chrome</li>
+    <li>Firefox</li>
+    <li>Safari</li>
+  </ul>
+</ul>
+
+
+
