@@ -27,7 +27,7 @@
                     <li>Created by: {{ exercise.created_by }}</li>
                 </ul>
                 {% if user == exercise.created_by %}
-                <a href="#" class="btn btn-primary">Edit Exercise</a>
+                <a href="{% url 'edit_exercise' exercise.id %}" class="btn btn-primary">Edit Exercise</a>
                 <a href="#" class="btn btn-primary">Edit Workout</a>
                 {% else %}
                 <a href="#" class="btn btn-primary disabled">Edit Exercise</a>
