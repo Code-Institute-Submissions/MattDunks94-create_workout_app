@@ -74,9 +74,11 @@
                 </li>
                 {% endif %}
             </ul>
+            {% if user.is_authenticated %}
             <span class="navbar-text">
                 Logged in as: {{ user.username }}
             </span>
+            {% endif %}
         </div>
     </nav>
 
