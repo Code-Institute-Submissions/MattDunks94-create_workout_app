@@ -25,9 +25,3 @@ class EditWorkoutCategoryForm(forms.ModelForm):
         model = WorkoutCategory
         fields = ['title', 'featured_image']
 
-
-class DeleteExerciseForm(forms.ModelForm):
-    class Meta:
-        model = Exercise
-        fields = ['exercise', 'sets', 'reps', 'weight', 'workout']
-
