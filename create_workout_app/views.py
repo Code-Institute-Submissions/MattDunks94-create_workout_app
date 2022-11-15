@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views import generic
 from .models import WorkoutCategory, Exercise
-from .forms import CreateExerciseForm, CreateWorkoutCategoryForm, EditExerciseForm
+from .forms import CreateExerciseForm, CreateWorkoutCategoryForm, EditExerciseForm, EditWorkoutCategoryForm
 
 
 class ExerciseList(generic.ListView):
@@ -41,6 +41,13 @@ class EditExercise(generic.UpdateView):
     model = Exercise
     form_class = EditExerciseForm
     template_name = 'edit_exercise.html'
+    success_url = reverse_lazy('home')
+
+
+class EditWorkoutCategory(generic.UpdateView):
+    model = WorkoutCategory
+    form_class = EditWorkoutCategoryForm
+    template_name = 'edit_workout.html'
     success_url = reverse_lazy('home')
 
 
