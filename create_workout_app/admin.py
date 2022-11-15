@@ -1,6 +1,7 @@
 from django.contrib import admin
 from .models import WorkoutCategory, Exercise
 
+
 @admin.register(WorkoutCategory)
 class WorkoutCategoryAdmin(admin.ModelAdmin):
 
