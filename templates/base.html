@@ -77,6 +77,20 @@
             </span>
         </div>
     </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2 mt-3">
+                {% for message in messages %}
+                <div class="alert {{ message.tags }} alert-dismissable fade show" id="msg" role="alert">
+                    {{ message | safe }}
+                    <button type="button" class="btn close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
     {% block content %}
 
     {% endblock %}
