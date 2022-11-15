@@ -12,7 +12,7 @@
             <img src="https://res.cloudinary.com/die65ihvc/image/upload/v1667139010/PROJECT-4/featured-placeholder_psw6rc.jpg"
                 class="card-img-top" alt="placeholder">
             {% else %}
-            <img src="#" class="card-img-top" alt="placeholder">
+            <img src="{{ exercise.workout.featured_image.url }}" class="card-img-top" alt="featured_image">
             {% endif %}
             <div class="card-body">
                 {% if user == exercise.created_by %}

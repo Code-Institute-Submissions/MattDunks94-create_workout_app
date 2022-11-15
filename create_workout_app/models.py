@@ -26,6 +26,7 @@ class Exercise(models.Model):
     reps = models.IntegerField()
     weight = models.DecimalField(max_digits=5, decimal_places=2)
     workout = models.ForeignKey(WorkoutCategory, on_delete=models.CASCADE, related_name='workout')
+    featured_image = CloudinaryField('image', default='placeholder')
     created_by = models.ForeignKey(User, on_delete=models.CASCADE, related_name='created_by')
     created_on = models.DateField(auto_now_add=True)
     updated_on = models.DateField(auto_now_add=True)
