@@ -10,7 +10,7 @@
         <img src="https://res.cloudinary.com/die65ihvc/image/upload/v1667139010/PROJECT-4/featured-placeholder_psw6rc.jpg"
             class="card-img-top" alt="placeholder">
         {% else %}
-        <img src="{{ exercise.workout.featured_image }}" class="card-img-top" id="exercise-img" alt="featured_image">
+        <img src="{{ exercise.workout.featured_image.url }}" class="card-img-top" id="exercise-img" alt="featured_image">
         {% endif %}
         <div class="card">
             <div class="card-body">
