@@ -17,11 +17,11 @@
             <img src="#" class="card-img-top" alt="placeholder">
             {% endif %}
             <div class="card-body">
-                <h5 class="card-title text-center">
+                <a href="{% url 'exercise_detail' exercise.id %}">
+                    <h5 class="card-title text-center">
                         {{ exercise.exercise }}
                     </h5>
-
-                </h5>
+                </a>
                 <ul>
                     <li>Workout Group: {{ exercise.workout }}</li>
                     <li>Created by: {{ exercise.created_by }}</li>
