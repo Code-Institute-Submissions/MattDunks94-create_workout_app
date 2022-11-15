@@ -19,3 +19,9 @@ class EditExerciseForm(forms.ModelForm):
         model = Exercise
         fields = ['exercise', 'sets', 'reps', 'weight', 'workout']
 
+
+class EditWorkoutCategoryForm(forms.ModelForm):
+    class Meta:
+        model = WorkoutCategory
+        fields = ['title', 'featured_image']
+
