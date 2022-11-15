@@ -9,4 +9,5 @@ urlpatterns = [
     path('create_workout/', views.CreateWorkoutCategory.as_view(), name='create_workout'),
     path('edit_exercise/<int:pk>/', views.EditExercise.as_view(), name='edit_exercise'),
     path('edit_workout/<int:pk>/', views.EditWorkoutCategory.as_view(), name='edit_workout'),
+    path('delete_exercise/<int:pk>', views.DeleteExercise.as_view(), name='delete_exercise'),
 ]
