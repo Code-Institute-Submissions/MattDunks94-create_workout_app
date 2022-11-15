@@ -2,9 +2,10 @@
 
 {% block content %}
 
-<h1 class="text-center">Workout List</h1>
-
+<h1 class="text-center py-3">Workout List</h1>
+{% if user.is_authenticated %}
 <span class="ml-5">Logged in as: {{ user.username }}</span>
+{% endif %}
 
 <div class="row">
     {% for exercise in exercise_list %}
@@ -17,7 +18,9 @@
             <img src="#" class="card-img-top" alt="placeholder">
             {% endif %}
             <div class="card-body">
+                {% if user == created_by %}
                 <a href="{% url 'exercise_detail' exercise.id %}">
+                {% endif %}
                     <h5 class="card-title text-center">
                         {{ exercise.exercise }}
                     </h5>
