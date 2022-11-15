@@ -17,7 +17,7 @@
             <div class="card-body">
                 {% if user == exercise.created_by %}
                 <a href="{% url 'exercise_detail' exercise.id %}">
-                {% endif %}
+                    {% endif %}
                     <h5 class="card-title text-center">
                         {{ exercise.exercise }}
                     </h5>
