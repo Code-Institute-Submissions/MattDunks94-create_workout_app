@@ -21,7 +21,7 @@ class CreateExercise(SuccessMessageMixin, generic.CreateView):
     form_class = CreateExerciseForm
     template_name = 'create_exercise.html'
     success_url = reverse_lazy('home')
-    success_message = 'Successfully created %(exercise)s!'
+    success_message = 'Successfully created %(exercise)s exercise!'
 
     def form_valid(self, form):
         form.instance.created_by = self.request.user
@@ -33,7 +33,7 @@ class CreateWorkoutCategory(SuccessMessageMixin, generic.CreateView):
     form_class = CreateWorkoutCategoryForm
     template_name = 'create_workout.html'
     success_url = reverse_lazy('home')
-    success_message = 'Successfully created %(title)s!'
+    success_message = 'Successfully created %(title)s category!'
 
     def form_valid(self, form):
         form.instance.published_by = self.request.user
