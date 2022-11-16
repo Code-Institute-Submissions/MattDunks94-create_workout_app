@@ -30,8 +30,10 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
         <a class="navbar-brand" href="{% url 'home' %}">
+            <!--Logo img-->
             <img src="https://res.cloudinary.com/die65ihvc/image/upload/v1668515830/PROJECT-4/WORKOUT_LOGO_fppmvj.png"
                 width="30" height="30" class="d-inline-block align-top mr-3" alt="brand-logo">
+            <!--Brand Banner img-->    
             <img src="https://res.cloudinary.com/die65ihvc/image/upload/v1668515853/PROJECT-4/WORKOUT_BRAND_eow3du.png"
                 width="200" height="30" class="d-inline-block align-top mr-4" alt="brand-banner">
         </a>
@@ -76,6 +78,7 @@
             </ul>
             {% if user.is_authenticated %}
             <span class="navbar-text">
+                <!--Displays username, if logged in-->
                 Logged in as: {{ user.username }}
             </span>
             {% endif %}
