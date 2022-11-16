@@ -75,8 +75,34 @@
 <ul>
 <li>A logo and banner is provided to make the app look more efficient.</li>
 </ul>
-<img src="">
+<img src="media/images/BRAND.png">
 
+### Navbar Features:
+<ul>
+  <li>Responsive nav. When operating the site on a small device, the nav condenses down to a 'burger' menu.</li>
+  <li>Contains a dropdown menu for selecting what to create.</li>
+  <li>Also, when logged in, username is displayed within the navbar.</li>
+</ul>
+<img src="media/images/RESPONSIVE_NAV.png">
+
+### User Authorisation:
+<ul>
+  <li>When users create an exercise, they become the publisher of that exercise. On the homepage the user is limited to what exercise they can view. If they are not the creator, publisher, of a group of exercises they cannot view details of those exercises.</li>
+  <li>Links that lead to the exercise, workout details, are disabled if the user did not create it.</li>
+</ul>
+<p>User authorised access to exercise detail:</p>
+<img src="media/images/CREATED_BY_USER.png">
+<br>
+<p>User unauthorised access to exercise detail:</p>
+(Links disabled)
+<img src="media/images/NOT_CREATED_BY_USER.png">
+
+## Features For The Future
+
+### Create Workout Plan/List:
+<ul>
+<li>A feature where the user can view exercises from the same workout category in a list. Creating a workout plan.</li>
+</ul>
 
 ## Testing
 
@@ -99,22 +125,100 @@
 ### Bugs & Errors:
 <p>When operating through the app, I came across a series of bugs, these included:</p>
 <ul>
-  <li>Creating Workout Bug:</li>
+  <li>Creating Workout Slugfield Bug:</li>
   <ul>
-  <li>When completing the create workout category form an error occurs. This is caused by the slug field not being prepopulated with the title value of the created workout category.</li>
+    <li>When completing the create workout category form an error occurs. This is caused by the slug field not being prepopulated with the title value of the created workout category.</li>
     <li>The user is shown an error page instead of being redirected back to the homepage.</li>
+    <li>Had to visit the admin site to manually update the slug for each workout category.</li>
   </ul>
   <br>
   <li>Featured Images Not Saving:</li>
+   <ul>
+    <li>Another bug involving creating a workout category.</li>
+    <li>When adding or editing a workout category and applying a featured image, the chosen image is not saved and displays the placeholder instead.</li>
+    <li>This may be down to not saving to Cloudinary database.</li>
+     <li>Had to access admin site to change featured image.</li>
+  </ul>
+  <br>
+  <li>Deleting workout category removes other users exercises:</li>
   <ul>
-  <li>Another bug involving creating a workout category.</li>
-  <li>When adding or editing a workout category and applying a featured image, the chosen image is not saved and displays the placeholder instead.</li>
-  <li>This may be down to not saving to Cloudinary database.</li>
+    <li>I originally had a delete workout category feature, but I discovered that when I deleted a category it removed exercises that were not created by the user deleting the category.</li>
+  </ul>
+    <li>Google Font not present:</li>
+  <ul>
+    <li>I imported a google font in the style.css file, 'Mitr'. Unfortunately during testing this font does not work on any browsers, displays sans-serif as a backup.</li>
   </ul>
 </ul>
 
-## Features For The Future
+## User Experience (UX)
 
+### Design:
+<ul>
+  <li>Colour Scheme:</li>
+  <ul>
+    <li>There is not alot of colour present but that's what makes it effective. With a white background and a dark grey navbar, this allows created exercise posts stand out along with the blue buttons,links and featured images.</li>
+  </ul>
+    <li>Navigation:</li>
+  <ul>
+    <li>The navigation is very modern and efficient. There's very little content within the nav, this makes it easy for the user to navigate round the site.</li>
+  </ul>
+    <li>Icons:</li>
+  <ul>
+    <li>There are many icons on the app. Icons indicate what the content consists of and/or what it carries out (ex.trash bin indicates deletion).</li>
+  </ul>
+</ul>
 
+## Technologies Used:
 
+### Languages Used:
+<ul>
+  <li><a href="https://en.wikipedia.org/wiki/HTML5">HTML5</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/CSS">CSS3</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/JavaScript">Javascript</a></li>
+</ul>
 
+### Frameworks, Libraries and Programs Used:
+<ul>
+  <li><a href="https://fonts.google.com/">Google Fonts</a></li>
+  <ul>
+    <li>Google fonts was used to import the 'Mitr' font into the style.css file.</li>
+  </ul>
+    <li><a href="https://fontawesome.com/">FontAwesome</a></li>
+  <ul>
+    <li>Fontawesome was used to add icons to several elements.</li>
+  </ul>
+    <li><a href="https://git-scm.com/">Git</a></li>
+  <ul>
+    <li>Git was used for version control and using the Gitpod terminal to commit and push to GitHub.</li>
+  </ul>
+  <li><a href="https://github.com/">GitHub</a></li>
+    <ul>
+    <li>GitHub is used to store the projects code after being pushed from Git.</li>
+  </ul>
+  <li><a href="https://www.pixelmator.com/pro/">Pixelmator</a></li>
+  <ul>
+    <li>I used Pixelmator to edit logo and banner.</li>
+  </ul>
+  <li><a href="https://getbootstrap.com/docs/4.3/getting-started/introduction/">Bootstrap4</a></li>
+  <ul>
+    <li>Bootstrap framework is used for styling, structuring and reponsive development</li>
+  </ul>
+    <li><a href="https://www.djangoproject.com/">Django</a></li>
+  <ul>
+    <li>Django framework was used to create the app/project.</li>
+  </ul>
+</ul>
+
+## Credits:
+
+### Code:
+<ul>
+  <li>I occasionally referenced to <a href="https://stackoverflow.com/">stackoverflow</a> for guidance.</li>
+</ul>
+
+### Media:
+<ul>
+  <li>The logo and branding was from <a href="https://smashinglogo.com/en/">smashinglogo</a>.</li>
+  <li>The placeholder image used for featured image field for when creating a new workout category was from <a href="https://unsplash.com/">unsplash</a>.</li>
+  <li>Featured images for already created exercises are from <a href="https://www.pexels.com/">Pexels</a>.</li>
+</ul>
