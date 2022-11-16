@@ -68,7 +68,15 @@
 <br>
 <p>Login page, This welcomes all users who visit the app:</p>
 <img src="media/images/SIGN_IN.png">
-<br>
+
+## Other Features
+
+### Branding:
+<ul>
+<li>A logo and banner is provided to make the app look more efficient.</li>
+</ul>
+<img src="">
+
 
 ## Testing
 
@@ -87,6 +95,26 @@
     <li>Safari</li>
   </ul>
 </ul>
+
+### Bugs & Errors:
+<p>When operating through the app, I came across a series of bugs, these included:</p>
+<ul>
+  <li>Creating Workout Bug:</li>
+  <ul>
+  <li>When completing the create workout category form an error occurs. This is caused by the slug field not being prepopulated with the title value of the created workout category.</li>
+    <li>The user is shown an error page instead of being redirected back to the homepage.</li>
+  </ul>
+  <br>
+  <li>Featured Images Not Saving:</li>
+  <ul>
+  <li>Another bug involving creating a workout category.</li>
+  <li>When adding or editing a workout category and applying a featured image, the chosen image is not saved and displays the placeholder instead.</li>
+  <li>This may be down to not saving to Cloudinary database.</li>
+  </ul>
+</ul>
+
+## Features For The Future
+
 
 
 
