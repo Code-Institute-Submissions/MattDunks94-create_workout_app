@@ -97,6 +97,13 @@
 (Buttons disabled)
 <img src="media/images/NOT_CREATED_BY_USER.png">
 
+### Messages:
+<ul>
+  <li>Added meassages to indicate a successful operation.</li>
+</ul>
+(Successful sign in message.)
+<img src="media/images/MESSAGES.png">
+
 ## Features For The Future
 
 ### Create Workout Plan/List:
