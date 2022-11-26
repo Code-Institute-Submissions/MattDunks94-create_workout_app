@@ -12,7 +12,8 @@
             class="card-img-top" alt="placeholder">
         {% else %}
         <!--Users Featured Image-->
-        <img src="{{ exercise.workout.featured_image.url }}" class="card-img-top" id="exercise-img" alt="featured_image">
+        <img src="{{ exercise.workout.featured_image.url }}" class="card-img-top" id="exercise-img"
+            alt="featured_image">
         {% endif %}
         <div class="card">
             <div class="card-body">
@@ -20,17 +21,22 @@
                 <p class="card-text text-center">{{ exercise.workout }}</p>
             </div>
             <ul class="list-group list-group-flush">
-                <li class="list-group-item"><i class="fa fa-sliders" aria-hidden="true"></i> Sets: {{ exercise.sets }}</li>
-                <li class="list-group-item"><i class="fa fa-repeat" aria-hidden="true"></i> Reps: {{ exercise.reps }}</li>
+                <li class="list-group-item"><i class="fa fa-sliders" aria-hidden="true"></i> Sets: {{ exercise.sets }}
+                </li>
+                <li class="list-group-item"><i class="fa fa-repeat" aria-hidden="true"></i> Reps: {{ exercise.reps }}
+                </li>
                 <li class="list-group-item"><i class="fa-solid fa-dumbbell"></i> Weight: {{ exercise.weight }} kg</li>
             </ul>
             <div class="card-body">
                 {% if user == exercise.created_by %}
-                <a href="{% url 'edit_exercise' exercise.id %}" class="card-link"><button class="btn btn-primary">Edit <i class="fa fa-pencil-square-o" aria-hidden="true"></i></button></a>
-                <a href="{% url 'delete_exercise' exercise.id %}" class="card-link"><button class="btn btn-danger">Delete <i class="fa fa-trash" aria-hidden="true"></i></button></a>
+                <a href="{% url 'edit_exercise' exercise.id %}" class="card-link"><button class="btn btn-primary">Edit
+                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i></button></a>
+                <a href="{% url 'delete_exercise' exercise.id %}" class="card-link"><button
+                        class="btn btn-danger">Delete <i class="fa fa-trash" aria-hidden="true"></i></button></a>
                 {% else %}
-                <a href="#" class="card-link disabled"><button class="btn btn-primary">Edit <i class="fa fa-pencil-square-o" aria-hidden="true"></i></button></a>
-                <a href="#" class="card-link disabled"><button class="btn btn-danger">Delete <i class="fa fa-trash" aria-hidden="true"></i></button></a>
+                <button class="btn btn-primary disabled">Edit <i class="fa fa-pencil-square-o"
+                        aria-hidden="true"></i></button>
+                <button class="btn btn-danger disabled">Delete <i class="fa fa-trash" aria-hidden="true"></i></button>
                 {% endif %}
             </div>
         </div>
