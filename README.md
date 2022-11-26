@@ -1,6 +1,6 @@
 # Workout Creator
 
-<a href="https://create-workout-app.herokuapp.com">Workout Creator</a> is an application that demonstrates basic use of the web framework <a href="https://www.djangoproject.com/">django</a>. The app is targeted for people who enjoy working out, keeping fit and want to keep track of their workouts. The app allows users to create, read, update and delete exercises, as well as creating their own account. The app is fully responsive on most handheld and desktop devices.
+<a href="https://create-workout-app.herokuapp.com">Workout Creator</a> is an application that demonstrates basic use of the web framework <a href="https://www.djangoproject.com/">django</a>. The app is targeted for people who enjoy working out, keeping fit and want to keep track of their workouts. The app allows users to create, read, update and delete exercises, as well as creating their own account. The site allows users to share created exercises/workouts to others. The app is fully responsive on most handheld and desktop devices.
 
 <img src="media/images/INDEX.png"> 
 
@@ -9,6 +9,7 @@
 ### Creating Exercises:
 <ul>
   <li>One of the main features, for this app, is the ability to create an exercise post. The user is presented with a form, in which they fill out with their exercise details and click 'Add Exercise' button or 'ENTER' key. The created exercise post is immediately added to the homepage (index.html).</li>
+  <li>User is informed, below the form, to create a workout before adding exercises if they want to add the created exercise to a new category or if no workouts exist.</li>
 </ul>
 <br>
 <img src="media/images/CREATE_EXERCISE.png">
@@ -87,14 +88,13 @@
 
 ### User Authorisation:
 <ul>
-  <li>When users create an exercise, they become the publisher of that exercise. On the homepage the user is limited to what exercise they can view. If they are not the creator, publisher, of a group of exercises they cannot view details of those exercises.</li>
-  <li>Links that lead to the exercise, workout details, are disabled if the user did not create it.</li>
+  <li>When users create an exercise, they become the publisher of that exercise and are able to edit those exercises. If they are not the creator, publisher, of a group of exercises they cannot edit or delete those exercises. The edit buttons are disabled.</li>
 </ul>
-<p>User authorised access to exercise detail:</p>
+<p>User authorised to edit exercise:</p>
 <img src="media/images/CREATED_BY_USER.png">
 <br>
-<p>User unauthorised access to exercise detail:</p>
-(Links disabled)
+<p>User unauthorised to edit exercise:</p>
+(Buttons disabled)
 <img src="media/images/NOT_CREATED_BY_USER.png">
 
 ## Features For The Future
