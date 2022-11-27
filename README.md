@@ -137,9 +137,12 @@
   <li>Creating Workout Slugfield Bug:</li>
   <ul>
     <li>When completing the create workout category form an error occurs. This is caused by the slug field not being prepopulated with the title value of the created workout category.</li>
-    <li>The user is shown an error page instead of being redirected back to the homepage.</li>
+    <li>The user is shown an error page instead of being redirected back to the homepage.(as shown below)</li>
     <li>Had to visit the admin site to manually update the slug for each workout category.</li>
   </ul>
+  <br>
+  (Integrity error)
+  <img src="media/images/INTEGRITY_ERROR.png">
   <br>
   <li>Featured Images Not Saving:</li>
    <ul>
@@ -158,8 +161,10 @@
     <li>I imported a google font in the style.css file, 'Mitr'. Unfortunately during testing this font does not work on any browsers, displays sans-serif as a backup.</li>
   </ul>
     <ul>
-    <li>When testing through Django's automated built in tests, I came across a database error and was unable to test my code through this method.</li>
-      <img src="">
+    <li>When testing through Django's automated built in tests, I came across a database error, within the terminal (below). Could not find a solution and was unable to run my tests through this method.</li>
+      <br>
+      (Error in terminal window)
+      <img src="media/images/DJANGO_TEST_ERROR.png">
   </ul>
 </ul>
 
