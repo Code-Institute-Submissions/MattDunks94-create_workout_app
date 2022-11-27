@@ -134,7 +134,7 @@
 ### Bugs & Errors:
 <p>When operating through the app, I came across a series of bugs, these included:</p>
 <ul>
-  <li>Creating Workout Slugfield Bug:</li>
+  <li>Creating Workout Category, Slugfield Bug:</li>
   <ul>
     <li>When completing the create workout category form an error occurs. This is caused by the slug field not being prepopulated with the title value of the created workout category.</li>
     <li>The user is shown an error page instead of being redirected back to the homepage.(as shown below)</li>
@@ -160,8 +160,9 @@
   <ul>
     <li>I imported a google font in the style.css file, 'Mitr'. Unfortunately during testing this font does not work on any browsers, displays sans-serif as a backup.</li>
   </ul>
-    <ul>
-    <li>When testing through Django's automated built in tests, I came across a database error, within the terminal (below). Could not find a solution and was unable to run my tests through this method.</li>
+  <li>Django Testing Database Error:</li>
+  <ul>
+  <li>When testing through Django's automated built in tests, I came across a database error, within the terminal (below). Could not find a solution and was unable to run my tests through this method.</li>
       <br>
       (Error in terminal window)
       <img src="media/images/DJANGO_TEST_ERROR.png">
