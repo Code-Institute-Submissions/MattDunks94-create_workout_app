@@ -157,6 +157,10 @@
   <ul>
     <li>I imported a google font in the style.css file, 'Mitr'. Unfortunately during testing this font does not work on any browsers, displays sans-serif as a backup.</li>
   </ul>
+    <ul>
+    <li>When testing through Django's automated built in tests, I came across a database error and was unable to test my code through this method.</li>
+      <img src="">
+  </ul>
 </ul>
 
 ## User Experience (UX)
