@@ -1,6 +1,6 @@
 # Workout Creator
 
-<a href="https://create-workout-app.herokuapp.com">Workout Creator</a> is an application that demonstrates basic use of the web framework <a href="https://www.djangoproject.com/">django</a>. The app is targeted for people who enjoy working out, keeping fit and want to keep track of their workouts. The app allows users to create, read, update and delete exercises, as well as creating their own account. The site allows users to share created exercises/workouts to others. The app is fully responsive on most handheld and desktop devices.
+<a href="https://create-workout-app.herokuapp.com">Workout Creator</a> is an application that demonstrates basic use of the web framework <a href="https://www.djangoproject.com/">django</a>. The app is targeted for people who enjoy working out, keeping fit and want to keep track of their workouts. The app allows users to create, read, update, delete and share exercises, as well as creating their own account. The app is fully responsive on most handheld and desktop devices.
 
 <img src="media/images/INDEX.png"> 
 
@@ -109,6 +109,8 @@
 ### Create Workout Plan/List:
 <ul>
 <li>A feature where the user can view exercises from the same workout category in a list. Creating a workout plan.</li>
+<li>Add comments/likes to exercises/workout plans.</li>
+<li>Correct featured image bug, so user can use their own image for their exercise/workouts, instead of the placeholder.</li>
 </ul>
 
 ## Testing
@@ -221,6 +223,7 @@
 ### Code:
 <ul>
   <li>I occasionally referenced to <a href="https://stackoverflow.com/">stackoverflow</a> for guidance.</li>
+  <li>I also used this Django project as a reference: <a href="https://www.notimedad.dev/django-small-project-workout-tracker/">NoTimeDad</a></li>
 </ul>
 
 ### Media:
